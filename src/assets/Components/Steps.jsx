@@ -7,7 +7,9 @@ export default function Steps(){
             <ul className="stepBox">
                 <li className="stepList"> 
                     <div >
-                        <button className="stepNumber">1</button>
+                    <div className="stepNumber currentStep">
+                        1
+                    </div>
                     </div>
                     <div className="stepDescription">
                         <p className="stepTitle">STEP 1</p>
