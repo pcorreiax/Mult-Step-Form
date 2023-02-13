@@ -22,8 +22,8 @@ export default function PersonalInfo(){
 
     return (
         <>
-            <h1 className="pageOneTitle">Personal Info</h1>
-            <p className="pageOneSubtitle">Please Provide your name, email address, and phone number.</p>
+            <h1 className="pageTitle">Personal Info</h1>
+            <p className="pageSubtitle">Please Provide your name, email address, and phone number.</p>
 
             <form onSubmit={handleSubmit}>
                 <div>

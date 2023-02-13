@@ -15,8 +15,8 @@ export default function SelectPlan(){
 
     return(
         <> 
-            <h1>Select your plan</h1>
-            <p>You have the option of monthly or yearly billing.</p>
+            <h1 className="pageTitle">Select your plan</h1>
+            <p className="pageSubtitle">You have the option of monthly or yearly billing.</p>
 
             <div className="plans">
                 <div className="planItem">
@@ -46,7 +46,7 @@ export default function SelectPlan(){
             </div>
 
             <div className="button">
-                    <button className="nextStep" type="submit">Next Step</button>
+                    <button className="nextStep">Next Step</button>
             </div>
         </>
     )
