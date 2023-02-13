@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+import { useNavigate } from "react-router-dom";
 
 export default function PersonalInfo(){
 
@@ -13,12 +14,15 @@ export default function PersonalInfo(){
         setInput({...input, [e.target.name]: e.target.value});
     }
 
+    const navigate = useNavigate();
+
     const handleSubmit =(e)=>{
         e.preventDefault()
-        console.log(input)
+        navigate('/step-two')
     }
 
     const [input, setInput] = useState(initialValues);
+
 
     return (
         <>

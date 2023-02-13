@@ -1,4 +1,12 @@
+import { useNavigate } from "react-router-dom"
+
 export default function PickAddOns(){
+
+    const navigate = useNavigate();
+
+    function navigateToStepFour(){
+        navigate('/step-four')
+    }
     return (
         <>
             <h1 className="pageTitle">Pick Add-ons</h1>
@@ -42,7 +50,7 @@ export default function PickAddOns(){
             </div>
 
             <div className="button">
-                <button className="nextStep" type="submit">Next Step</button>
+                <button className="nextStep" onClick={navigateToStepFour}>Next Step</button>
             </div>
         </>
     )

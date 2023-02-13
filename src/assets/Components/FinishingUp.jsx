@@ -1,4 +1,12 @@
+import { useNavigate } from "react-router-dom";
+
 export default function FinishingUp(){
+
+    const navigate = useNavigate();
+
+    function navigateToThankYou(){
+        navigate('/thank-you')
+    }
     return (
         <>
             <h1 className="pageTitle">Finishing Up</h1>
@@ -30,7 +38,7 @@ export default function FinishingUp(){
             </div>
 
             <div className="button">
-                    <button className="nextStep" type="submit">Confirm</button>
+                    <button className="nextStep" onClick={navigateToThankYou}>Confirm</button>
             </div>
         </>
     )
